@@ -18,15 +18,15 @@ module.exports = {
   ],
   module: {
     loaders: [
-    // js
+    // js. added query
     {
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'client')
     },
     // CSS
-    { 
-      test: /\.styl$/, 
+    {
+      test: /\.styl$/,
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
     }
